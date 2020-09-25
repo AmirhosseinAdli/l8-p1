@@ -1,6 +1,6 @@
 @push('js')
     <script>
-       console.log('select')
+       console.log('dselect')
     </script>
 @endpush
 
@@ -9,10 +9,10 @@
 <div class="col-md-6">
     <select name={{ $name }} class="form-control">
         @if(isset($null_title))
-            <option value="">{{$null_title}}</option>
+            <option value="" @if($value == null) selected="selected" @endif>{{$null_title}}</option>
         @endif
         @foreach($options as $key => $title)
-            <option value="{{$key}}">{{$title}}</option>
+            <option value="{{$key}}" @if($value == $key) selected="selected" @endif>{{$title}}</option>
         @endforeach
     </select>
 </div>

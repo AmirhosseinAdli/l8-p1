@@ -5,13 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
+    <title>Document</title>
 </head>
 <body>
-@section('body')
+<form action="" method="post">
     <div>
-        Main Test
+    <input type="text">
+    <img src="" alt="">
+    <button></button>
     </div>
-@show
+</form>
+
 </body>
 </html>

@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//Route::post('test', function (){
+//   return date('Y-m-d H:i:s', time());
+//});
+
+//<domain>/api/user
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
